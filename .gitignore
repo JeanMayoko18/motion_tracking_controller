@@ -70,15 +70,6 @@ tensorboard/
 tb_logs/
 events.out.tfevents.*
 
-# =============================
-#  ROS 2 Launch / URDF / Mesh Files
-# =============================
-*.urdf
-*.xacro
-*.dae
-*.stl
-*.gz
-*.launch.py
 
 # =============================
 #  Editor / IDE
