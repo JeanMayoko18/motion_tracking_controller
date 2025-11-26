@@ -56,6 +56,11 @@ class PolicyNode(Node):
         self.onnx_input_name: str = self.get_parameter("onnx_input_name").get_parameter_value().string_value
         self.control_rate: float = self.get_parameter("control_rate").get_parameter_value().double_value
 
+        # In __init__ (add after existing declare_parameter)
+        self.declare_parameter("export_from_ckpt_script", "/home/jean/RL/export_rslrl_to_onnx_from_ckpt.py")
+        self.declare_parameter("export_task_name", "whole_body_tracking/G1PunchTask")
+        self.declare_parameter("export_num_envs", 1)
+
         # ------------------ Check ONNX runtime ------------------
         if ort is None:
             self.get_logger().error(
