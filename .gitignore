@@ -1,0 +1,108 @@
+# =============================
+#  ROS 2 / Colcon / Build Files
+# =============================
+# Colcon build artifacts
+build/
+install/
+log/
+.colcon/
+colcon_ws/
+
+# Prevent accidental workspace root pollution
+*~
+
+# =============================
+#  Python
+# =============================
+# Bytecode and caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Packaging
+*.egg*
+*.egg-info/
+dist/
+pip-wheel-metadata/
+
+# Virtual environments
+.env
+.venv/
+venv/
+ENV/
+env/
+*/.venv/
+*/venv/
+*/env/
+
+# Testing / coverage
+.pytest_cache/
+htmlcov/
+
+# =============================
+#  MuJoCo / IsaacLab / RL
+# =============================
+# MuJoCo cache and logs
+mjcache/
+mjlogs/
+*.mjb
+*.xml.tmp
+
+# RL checkpoints and models
+checkpoints/
+policies/
+models/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# IsaacLab outputs
+outputs/
+runs/
+results/
+
+# Training logs
+wandb/
+tensorboard/
+tb_logs/
+events.out.tfevents.*
+
+# =============================
+#  ROS 2 Launch / URDF / Mesh Files
+# =============================
+*.urdf
+*.xacro
+*.dae
+*.stl
+*.gz
+*.launch.py
+
+# =============================
+#  Editor / IDE
+# =============================
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# =============================
+#  Miscellaneous / Backup Files
+# =============================
+*.log
+*.tmp
+*.bak
+*.backup
+
+# =============================
+#  Optional: large data / recordings
+# =============================
+# Uncomment if you have datasets or simulation recordings
+# dataset/
+# recordings/
+# videos/
